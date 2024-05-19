@@ -47,14 +47,36 @@ function showRegisterModal() {
 
 }
 
-// Adding event listener to the form submission
 document.getElementById('registration-form').addEventListener('submit', function(event) {
     event.preventDefault(); 
     const name = document.getElementById('register-name').value;
     const email = document.getElementById('register-email').value;
-    alert(`Thank you for registering, ${name}! We will send details to ${email}.`);
-    document.getElementById('register-modal').style.display = 'none'; // Close the modal after registration
+    const eventTitle = document.getElementById('modal-title').textContent; // Assuming this is set when the modal is open
+
+    // Call function to update the UI with the new registration
+    addRegisteredEventToList(name, eventTitle);
+
+    // Provide feedback within the page
+    const feedbackMessage = document.createElement('p');
+    feedbackMessage.textContent = `Thank you for registering, ${name}! We will send details to ${email}.`;
+    feedbackMessage.style.color = "green";
+    document.querySelector('.modal-content').appendChild(feedbackMessage);
+
+    setTimeout(() => {
+        document.getElementById('register-modal').style.display = 'none'; // Close the modal after showing message
+        feedbackMessage.remove(); // Remove the feedback message after a short delay
+    }, 3000);
+
+    document.getElementById('registration-form').reset(); // Reset form fields
 });
+
+function addRegisteredEventToList(name, eventTitle) {
+    const registeredEventsList = document.getElementById('registered-events-list');
+    const listItem = document.createElement('li');
+    listItem.textContent = `${name} registered for: ${eventTitle}`;
+    registeredEventsList.appendChild(listItem);
+}
+
 
 function displayEvents(events) {
     const container = document.querySelector('.container');
