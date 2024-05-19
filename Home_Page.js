@@ -98,3 +98,16 @@ function showDetailsModal(event) {
         }
     }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    setupCloseButtons();
+});
+
+function setupCloseButtons() {
+    const closeButtons = document.querySelectorAll('.close');
+    closeButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            this.closest('.modal').style.display = 'none';
+        });
+    });
+}
