@@ -74,8 +74,22 @@ function addRegisteredEventToList(name, eventTitle) {
     const registeredEventsList = document.getElementById('registered-events-list');
     const listItem = document.createElement('li');
     listItem.textContent = `${name} registered for: ${eventTitle}`;
+
+    // Create a delete button for each event
+    const deleteBtn = document.createElement('button');
+    deleteBtn.textContent = 'Delete';
+    deleteBtn.className = 'btn delete-btn'; // You can style this button as needed
+    deleteBtn.onclick = function() { deleteEvent(listItem); };
+
+    listItem.appendChild(deleteBtn);
     registeredEventsList.appendChild(listItem);
 }
+
+function deleteEvent(listItem) {
+    listItem.remove();
+    // Optionally, you could also call a backend API to remove the event from the database.
+}
+
 
 
 function displayEvents(events) {
