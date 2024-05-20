@@ -25,3 +25,8 @@ The Community Events Exploration Platform is a web-based application designed to
 - Testing
 - Deployment
 - Trouble Shooting
+
+## Installation and Dependencies
+- **Git
+- **Node.js
+-  **npm
