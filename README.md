@@ -38,7 +38,8 @@ To set up the Community Events Exploration Platform on your local development en
 ### Prerequisites:
 - Node.js (v12.0 or higher recommended)
 - npm (v6.0 or higher)
-
+## How to run the tests
+- **npm test**
 ### Steps:
 ```bash
 # Clone the repository
