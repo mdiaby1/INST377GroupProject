@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
 function fetchEvents() {
     const apiUrl = 'https://api.seatgeek.com/2/events';
     const clientId = 'MzEwOTYyNjd8MTcxNTk3ODQ5Ny43NDIwNzk1'; 
+    const eventbriteApiUrl = 'https://www.eventbriteapi.com/v3/events/search/';
+    const eventbriteToken = '5HKTAQ2FHI7FDBKWAVS2';
 
     axios.get(`${apiUrl}?client_id=${clientId}`)
         .then(function (response) {
