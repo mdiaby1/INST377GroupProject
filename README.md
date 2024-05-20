@@ -9,7 +9,7 @@ The Community Events Exploration Platform is a web-based application designed to
 - **Desktop**: Chrome latest two versions, Firefox, Edge
 
 ## Features
-Event Discovery
-Filtering
-Information
-Registration
+- **Event Discovery**
+- **Filtering**
+- **Information**
+- **Registration**
