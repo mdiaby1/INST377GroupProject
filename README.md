@@ -8,29 +8,20 @@ The Community Events Exploration Platform is a web-based application designed to
 - **Android**: Chrome latest two versions
 - **Desktop**: Chrome latest two versions, Firefox, Edge
 
+## Features
+- **Event Discovery**
+- **Filtering**
+- **Information**
+- **Registration**
 
-# Developer Manual
-## Installation and Setup
-To set up the Community Events Exploration Platform on your local development environment, follow these steps:
-
-### Prerequisites:
-- Node.js (v12.0 or higher recommended)
-- npm (v6.0 or higher)
-
-### Steps:
-```bash
-# Clone the repository
-git clone https://github.com/mdiaby1/INST377GroupProject.git
-
-## API Endpoints
-The application utilizes several APIs to function correctly. Here are the endpoints used:
-
-- **GET /api/events** - Fetches event data from SeatGeek and Eventbrite.
-- **POST /api/register** - Registers a user for an event. Expects user name, email, and event ID.
-
-## Known Bugs and Roadmap for Future Development
-### Known Bugs:
-- Date filters on the home page do not correctly filter past events.
-
-### Roadmap:
-- Allow users to submit and manage their own events.
+## Table of Contents
+- Setup and Installation
+- Project Structure
+- API Integration
+- Event Discovery
+- Filtering
+- Information
+- Registration
+- Testing
+- Deployment
+- Trouble Shooting
