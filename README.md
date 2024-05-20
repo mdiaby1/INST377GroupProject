@@ -13,3 +13,5 @@ The Community Events Exploration Platform is a web-based application designed to
 - **Filtering**
 - **Information**
 - **Registration**
+
+## Table of Contents
